@@ -1,0 +1,17 @@
+{
+	"name": "Python tracking formater",
+	"version": "1.0",
+	"description": "Better python diffs",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": [
+				"http://runbot.odoo.com/web/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"run_at": "document_idle"
+		}
+	]
+}
